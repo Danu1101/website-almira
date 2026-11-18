@@ -2,7 +2,7 @@
 # Format: usernameGitHub/namaRepository  (contoh: felicio/website-almira)
 backend:
   name: github
-  repo: Danu1101/NAMA-REPOSITORY-KAMU
+  repo: Danu1101/website-almira
   branch: main
 
 locale: id
