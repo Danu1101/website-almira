@@ -2,15 +2,15 @@
 # Format: usernameGitHub/namaRepository  (contoh: felicio/website-almira)
 backend:
   name: github
-  repo: USERNAME/NAMA-REPOSITORY
+  repo: Danu1101/NAMA-REPOSITORY-KAMU
   branch: main
 
 locale: id
 publish_mode: simple
 media_folder: "images"
 public_folder: "/images"
-site_url: https://NAMA-SITUS.netlify.app
-display_url: https://NAMA-SITUS.netlify.app
+site_url: https://keripiktempealmira.netlify.app
+display_url: https://keripiktempealmira.netlify.app
 
 collections:
   - name: "website"
