@@ -1,0 +1,67 @@
+# ==== GANTI 1 BARIS INI ====
+# Format: usernameGitHub/namaRepository  (contoh: felicio/website-almira)
+backend:
+  name: github
+  repo: USERNAME/NAMA-REPOSITORY
+  branch: main
+
+locale: id
+publish_mode: simple
+media_folder: "images"
+public_folder: "/images"
+site_url: https://NAMA-SITUS.netlify.app
+display_url: https://NAMA-SITUS.netlify.app
+
+collections:
+  - name: "website"
+    label: "Isi Website"
+    files:
+      - name: "site"
+        label: "Pengaturan Website & Produk"
+        file: "content/site.json"
+        fields:
+          - { label: "Nama Usaha", name: "nama", widget: "string" }
+          - { label: "Kalimat Singkat di Bawah Nama", name: "tagline", widget: "text" }
+          - { label: "Logo", name: "logo", widget: "image", required: false }
+
+          - label: "Nomor WhatsApp"
+            name: "whatsapp"
+            widget: "string"
+            hint: "Awali 62, tanpa + dan tanpa spasi. Contoh: 6285234644175"
+            pattern: ['^62[0-9]{8,13}$', "Format: 62 diikuti nomor tanpa 0, tanpa spasi atau tanda +"]
+
+          - { label: "Alamat", name: "alamat", widget: "string" }
+          - { label: "Jam Operasional", name: "jam", widget: "string", required: false }
+          - { label: "Link Google Maps", name: "maps", widget: "string", required: false }
+          - { label: "Link Instagram", name: "instagram", widget: "string", required: false }
+          - { label: "Link TikTok", name: "tiktok", widget: "string", required: false }
+          - { label: "Link Facebook", name: "facebook", widget: "string", required: false }
+
+          - label: "Keunggulan (4 kotak di bawah nama)"
+            name: "keunggulan"
+            widget: "list"
+            max: 4
+            summary: "{{fields.judul}} – {{fields.keterangan}}"
+            fields:
+              - { label: "Judul Singkat", name: "judul", widget: "string" }
+              - { label: "Keterangan", name: "keterangan", widget: "string" }
+
+          - label: "Daftar Produk"
+            name: "produk"
+            widget: "list"
+            summary: "{{fields.nama}} – Rp {{fields.harga}}"
+            fields:
+              - { label: "Nama Produk", name: "nama", widget: "string" }
+              - { label: "Deskripsi Singkat", name: "deskripsi", widget: "string", required: false }
+              - { label: "Harga (angka saja)", name: "harga", widget: "number", value_type: "int", min: 0 }
+              - { label: "Label (misal: Terlaris)", name: "label", widget: "string", required: false }
+              - { label: "Foto Produk", name: "foto", widget: "image", required: false }
+
+          - label: "Testimoni Pelanggan"
+            name: "testimoni"
+            widget: "list"
+            required: false
+            summary: "{{fields.nama}}"
+            fields:
+              - { label: "Nama Pelanggan", name: "nama", widget: "string" }
+              - { label: "Isi Testimoni", name: "isi", widget: "text" }

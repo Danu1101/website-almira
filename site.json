@@ -1,0 +1,30 @@
+{
+  "nama": "Keripik Tempe Almira",
+  "tagline": "Keripik tempe sagu khas Lawang, Malang. Renyah, tipis, dan digoreng dengan minyak kemasan.",
+  "logo": "/images/logo.jpg",
+  "whatsapp": "6285234644175",
+  "alamat": "Jl. Dorowati Barat, Gg. Sadewa No. III, Mulyoarjo, Lawang, Kab. Malang",
+  "jam": "Produksi Senin–Jumat, 07.30–15.30 WIB",
+  "maps": "https://maps.app.goo.gl/9Jv7Tjp8e2R8M8hSA",
+  "instagram": "https://www.instagram.com/keripik_sagu_almira",
+  "tiktok": "https://www.tiktok.com/@keripiksagu2",
+  "facebook": "https://www.facebook.com/share/1cTs948pUx/",
+  "keunggulan": [
+    { "judul": "Halal", "keterangan": "Bersertifikat" },
+    { "judul": "P-IRT", "keterangan": "Izin edar resmi" },
+    { "judul": "3 bulan", "keterangan": "Daya simpan" },
+    { "judul": "Kirim", "keterangan": "Luar kota & PO ekspor" }
+  ],
+  "produk": [
+    { "nama": "Original (100 g)", "deskripsi": "Rasa asli keripik tempe sagu, gurih dan renyah.", "harga": 4500, "label": "Terlaris", "foto": "/images/produk-original.jpg" },
+    { "nama": "Balado Pedas Manis (100 g)", "deskripsi": "Bumbu balado pedas manis.", "harga": 4500, "label": "", "foto": "" },
+    { "nama": "Keju (100 g)", "deskripsi": "Taburan keju gurih.", "harga": 4500, "label": "", "foto": "" },
+    { "nama": "Pizza (100 g)", "deskripsi": "Bumbu pizza dengan aroma rempah.", "harga": 4500, "label": "", "foto": "" },
+    { "nama": "Ayam Bakar (100 g)", "deskripsi": "Bumbu ayam bakar yang gurih.", "harga": 4500, "label": "", "foto": "" },
+    { "nama": "Jagung Bakar (100 g)", "deskripsi": "Bumbu jagung bakar manis gurih.", "harga": 4500, "label": "", "foto": "" },
+    { "nama": "Udang (100 g)", "deskripsi": "Bumbu udang yang gurih.", "harga": 4500, "label": "", "foto": "" },
+    { "nama": "Sapi Panggang (100 g)", "deskripsi": "Bumbu sapi panggang.", "harga": 4500, "label": "", "foto": "" },
+    { "nama": "Kiloan Original (1 kg)", "deskripsi": "Untuk stok toko, acara, atau dijual kembali.", "harga": 45000, "label": "Kiloan", "foto": "" }
+  ],
+  "testimoni": []
+}
