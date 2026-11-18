@@ -1,0 +1,21 @@
+[build]
+  publish = "."
+
+# Data konten selalu diambil terbaru
+[[headers]]
+  for = "/content/*"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+# Halaman admin tidak boleh diindeks mesin pencari
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+    Referrer-Policy = "same-origin"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
